@@ -108,58 +108,6 @@ When you're ready to share the app (not just run it yourself), you "build" it:
 
 ---
 
-## 🐙 How to Upload to GitHub (Step by Step)
-
-### Part A — Create a GitHub Account
-1. Go to https://github.com and sign up for a free account
-
-### Part B — Create a New Repository
-1. Once logged in, click the **+** button (top right) → **New repository**
-2. Give it a name like `resume-builder`
-3. Leave it **Public** (or Private, your choice)
-4. Do **NOT** check "Add README" (we already have one)
-5. Click **Create repository**
-
-### Part C — Connect Your Project to GitHub
-Back in VS Code terminal, type these commands one at a time, pressing Enter after each:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Resume Builder app"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/resume-builder.git
-git push -u origin main
-```
-
-> ⚠️ Replace `YOUR_USERNAME` with your actual GitHub username!
-
-GitHub will ask for your username and password (or a personal access token).
-
-### Part D — View Your Code Online
-Go to `https://github.com/YOUR_USERNAME/resume-builder` and you'll see all your files!
-
----
-
-## 🌐 How to Host It Live (Free) with GitHub Pages
-
-1. In VS Code terminal, run:
-   ```
-   npm run build
-   ```
-2. Then push the `dist` folder to a branch called `gh-pages`:
-   ```
-   git add dist -f
-   git commit -m "Deploy"
-   git subtree push --prefix dist origin gh-pages
-   ```
-3. On GitHub, go to your repo → **Settings → Pages**
-4. Under "Source", select **Branch: gh-pages**, folder: **/ (root)**
-5. Click Save — your site will be live at:
-   `https://YOUR_USERNAME.github.io/resume-builder`
-
----
-
 ## 💾 How Your Data is Saved
 
 All resume data is saved automatically to your browser's **localStorage**. This means:
