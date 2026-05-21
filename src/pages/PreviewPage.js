@@ -173,7 +173,7 @@ async function printResume() {
       width: 775px;
       padding: 24px 24px;
       font-family: Georgia, serif;
-      font-size: 11px;
+      font-size: 18px;
       line-height: 1.55;
       color: #1a1410;
       box-shadow: none;
